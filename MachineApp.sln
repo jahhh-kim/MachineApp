@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Note", "Note", "{917959FA-5
 		MachineApp.txt = MachineApp.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineApp.Models", "MachineApp.Models\MachineApp.Models.csproj", "{6A0C3084-57EC-4B37-AFB2-8DA62D699412}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{5453B51E-A89E-4622-A847-D2DA19F8895D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5453B51E-A89E-4622-A847-D2DA19F8895D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5453B51E-A89E-4622-A847-D2DA19F8895D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A0C3084-57EC-4B37-AFB2-8DA62D699412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A0C3084-57EC-4B37-AFB2-8DA62D699412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A0C3084-57EC-4B37-AFB2-8DA62D699412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A0C3084-57EC-4B37-AFB2-8DA62D699412}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
