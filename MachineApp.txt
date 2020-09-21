@@ -1,0 +1,7 @@
+(1) SQL Server Database Server
+
+데이터베이스 : SQL Server -> SQL Server Database Project 를 생성한다
+MachineApp 데이터베이스
+Machines 테이블
+
+(2) GitHub에 소스 게시
