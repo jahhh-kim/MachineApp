@@ -11,6 +11,12 @@ Machines 테이블
 
 	MachineApp.Models
 
+	 Machine.cs
+	 Id Name
+	 IMachineRepository.cs
+	 MachineRepository.cs
+
+	 MachineDbContext.cs
 
 	테이블과 1대일로 매핑과는 모델 클래스를 만든다
 
