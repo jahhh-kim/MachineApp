@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MachineApp.Models.Common;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -52,5 +53,18 @@ namespace MachineApp.Models
                 await _context.SaveChangesAsync();
             }
         }
+        //[!] Index + Paging
+
+        public async Task<PagingResult<Machine>> GetMachinesPageAsync(int pageIndex, int pageSize)
+        {
+            var totalRecords = await _context.Machines.CountAsync();
+            var machines = await _context.Machines
+                .OrderByDescending(m => m.Id)
+                .Skip(pageIndex * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+            return new PagingResult<Machine>(machines, totalRecords);
+        }
+
     }
 }

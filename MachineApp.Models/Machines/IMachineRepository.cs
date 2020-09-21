@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using MachineApp.Models.Common;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MachineApp.Models
@@ -14,5 +15,7 @@ namespace MachineApp.Models
         Task<Machine> GetMachineByIdAsync(int id); //상세 GetById(), FindById()
         Task<Machine> EditMachineAsync(Machine machine); //수정
         Task DeleteMachine(int id); //삭제 
+
+        Task<PagingResult<Machine>> GetMachinesPageAsync(int pageIndex, int pageSize); //출력 : 페이징이 처리된
     }
 }
