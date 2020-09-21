@@ -16,7 +16,10 @@ Machines 테이블
 	 IMachineRepository.cs
 	 MachineRepository.cs
 
-	 MachineDbContext.cs
+	 MachineDbContext.cs //  엔터테 프레임워크 코어에서 데이터베이스를 바라보고있는 클래스
+	                         테이블이라고 보면 된다
+							 Machines (테이블이름)
+
 
 	테이블과 1대일로 매핑과는 모델 클래스를 만든다
 
