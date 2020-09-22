@@ -17,7 +17,7 @@ namespace MachineApp.Models
             //Empty
         }
 
-        public MachineDbContext(DbContextOptions<MachineDbContext> options)
+        public MachineDbContext(DbContextOptions<MachineDbContext>options)
             :base(options)
         {
             //공식과 같은 코드

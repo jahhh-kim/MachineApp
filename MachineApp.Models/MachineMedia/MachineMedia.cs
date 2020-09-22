@@ -1,16 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations.Operations;
+﻿using MachineApp.Models.Common;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MachineApp.Models
+namespace MachineApp.Models 
 {
     /// <summary>
     /// [2]Model Class : Media 모델 클래스 == Media 테이블과 일대일로 매핑 Media , Media , Media 
     /// </summary>
     /// 
     [Table("MachinesMedias")]
-    public class MachineMedia
+    public class MachineMedia : AuditableBase
     {
         /// <summary>
         /// Serial Numder
@@ -27,13 +28,6 @@ namespace MachineApp.Models
         public int MachineId { get; set; }
         public int MediaId { get; set; }
 
-        public string CreatedBy { get; set; }
-
-        public string Created { get; set; }
-
-        public string ModifiedBy { get; set; }
-
-        public DateTime? Modified { get; set; }
 
     }
 }
